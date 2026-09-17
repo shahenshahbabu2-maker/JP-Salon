@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="JP Salon - Lakme Professional Unisex Salon in Shahadatpura, Mau, Uttar Pradesh">
+<meta name="theme-color" content="#080808">
+
+<title>JP Salon | Lakme Professional • Unisex</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#080808;
+    --card:#111111;
+    --gold:#d6b36a;
+    --gold2:#f1d89a;
+    --white:#f5f2eb;
+    --muted:#aaa39a;
+    --line:#242424;
+    --max:1180px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--white);
+    font-family:"DM Sans",sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.container{
+    width:min(var(--max),92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:999;
+    background:rgba(8,8,8,.85);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--line);
+}
+
+.nav{
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-family:"Playfair Display",serif;
+    font-size:25px;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.navlinks{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.navlinks a{
+    color:#ddd;
+    font-size:14px;
+    transition:.25s;
+}
+
+.navlinks a:hover{
+    color:var(--gold);
+}
+
+.navbtn{
+    border:1px solid var(--gold);
+    padding:10px 17px;
+    border-radius:30px;
+    color:var(--gold)!important;
+}
+
+.menu{
+    display:none;
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+
+    background:
+    linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.40)),
+    url("images/salon-interior.png") center/cover;
+}
+
+.hero-content{
+    padding-top:80px;
+}
+
+.eyebrow,
+.kicker{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:11px;
+    font-weight:700;
+}
+
+h1{
+    font-family:"Playfair Display",serif;
+    font-size:clamp(52px,8vw,94px);
+    line-height:.98;
+    font-weight:600;
+    margin-top:15px;
+}
+
+h1 em{
+    color:var(--gold);
+    font-style:normal;
+}
+
+.hero p{
+    max-width:620px;
+    color:#d0cbc3;
+    font-size:18px;
+    margin:25px 0 30px;
+}
+
+.actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:13px 21px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:#080808;
+}
+
+.btn-gold:hover{
+    background:var(--gold2);
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #555;
+    color:white;
+}
+
+.btn-outline:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+}
+
+/* ================= GENERAL ================= */
+
+section{
+    padding:105px 0;
+}
+
+.section-head{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+h2{
+    font-family:"Playfair Display",serif;
+    font-size:clamp(36px,5vw,58px);
+    line-height:1.05;
+    font-weight:600;
+    margin-top:8px;
+}
+
+.section-head p{
+    max-width:420px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:65px;
+    align-items:center;
+}
+
+.about-img{
+    height:550px;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid var(--line);
+}
+
+.about-img img{
+    height:100%;
+}
+
+.about-copy>p{
+    color:var(--muted);
+    margin:20px 0;
+}
+
+.points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.point{
+    padding:20px;
+    border:1px solid var(--line);
+    background:#101010;
+    border-radius:18px;
+}
+
+.point b{
+    display:block;
+    color:var(--gold);
+    font-size:13px;
+}
+
+.point span{
+    color:#999;
+    font-size:12px;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    background:#0b0b0b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.service{
+    padding:30px;
+    border:1px solid var(--line);
+    background:#101010;
+    border-radius:18px;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-6px);
+    border-color:#806b3d;
+}
+
+.num{
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:2px;
+}
+
+.service h3{
+    font-family:"Playfair Display",serif;
+    font-size:27px;
+    margin:17px 0 8px;
+}
+
+.service p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.offer{
+    padding:42px;
+    border:1px solid #604f2f;
+    border-radius:22px;
+    background:#10100f;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.offer p{
+    color:var(--muted);
+    max-width:650px;
+    margin-top:10px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:1.25fr .75fr .75fr;
+    grid-template-rows:260px 260px;
+    gap:13px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid var(--line);
+    cursor:pointer;
+}
+
+.gallery-item img{
+    height:100%;
+    transition:.45s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.07);
+}
+
+.g1{
+    grid-row:span 2;
+}
+
+.g4{
+    grid-column:span 2;
+}
+
+/* ================= ENQUIRY ================= */
+
+.enquiry{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:65px;
+}
+
+.enquiry-copy p{
+    color:var(--muted);
+    margin:18px 0;
+}
+
+.contact-mini{
+    display:grid;
+    gap:12px;
+}
+
+.contact-mini div{
+    padding:15px;
+    border:1px solid var(--line);
+    border-radius:13px;
+    background:#0e0e0e;
+}
+
+.contact-mini small{
+    display:block;
+    color:var(--gold);
+    font-size:9px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.contact-mini strong{
+    font-size:14px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+label{
+    color:#aaa;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    background:#101010;
+    color:white;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:14px;
+    font:inherit;
+    outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:var(--gold);
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* ================= VISIT ================= */
+
+.visit{
+    background:#0b0b0b;
+}
+
+.visitbox{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border:1px solid var(--line);
+    border-radius:22px;
+    overflow:hidden;
+}
+
+.visit-info{
+    padding:48px;
+}
+
+.visit-info p{
+    color:var(--muted);
+    margin:16px 0 25px;
+}
+
+.map{
+    min-height:360px;
+    background:#151515;
+    display:grid;
+    place-items:center;
+    text-align:center;
+}
+
+.pin{
+    color:var(--gold);
+    font-size:42px;
+}
+
+.map p{
+    color:#aaa;
+    font-size:13px;
+    margin:8px 0 18px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    padding:34px 0;
+    border-top:1px solid var(--line);
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.footer small{
+    color:#777;
+}
+
+/* ================= FLOAT BUTTON ================= */
+
+.float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:57px;
+    height:57px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:var(--gold);
+    color:#080808;
+    font-size:21px;
+    z-index:90;
+    box-shadow:0 10px 30px #0008;
+}
+
+.top{
+    position:fixed;
+    right:20px;
+    bottom:88px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#151515;
+    color:var(--gold);
+    border:1px solid var(--line);
+    display:none;
+    z-index:90;
+}
+
+/* ================= ANIMATION ================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:.7s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:none;
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:#000e;
+    z-index:9999;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.lightbox img{
+    max-width:1000px;
+    max-height:85vh;
+    width:auto;
+    border-radius:15px;
+}
+
+.close{
+    position:absolute;
+    right:25px;
+    top:15px;
+    color:white;
+    font-size:38px;
+    cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .navlinks{
+        display:none;
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        background:#090909;
+        padding:20px;
+        flex-direction:column;
+        border-bottom:1px solid var(--line);
+    }
+
+    .navlinks.open{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .about,
+    .enquiry,
+    .visitbox{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:220px 220px 220px;
+    }
+
+    .g1{
+        grid-row:auto;
+    }
+
+    .g4{
+        grid-column:auto;
+    }
+
+    .offer{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:560px){
+
+    section{
+        padding:75px 0;
+    }
+
+    .grid,
+    .points,
+    form{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .gallery{
+        grid-template-rows:180px 180px 180px;
+    }
+
+    .g1,
+    .g4{
+        grid-column:span 2;
+    }
+
+    .section-head{
+        display:block;
+    }
+
+    .section-head p{
+        margin-top:15px;
+    }
+
+    .footer{
+        display:block;
+    }
+
+    .footer small{
+        display:block;
+        margin-top:7px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container nav">
+
+<a class="logo" href="#home">
+JP <span>SALON</span>
+</a>
+
+<nav class="navlinks" id="nav">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#enquiry">Enquiry</a>
+
+<a class="navbtn" href="tel:+918808534033">
+Call Now
+</a>
+
+</nav>
+
+<button class="menu" id="menu">
+☰
+</button>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content reveal">
+
+<div class="eyebrow">
+Lakme Professional • Unisex
+</div>
+
+<h1>
+Style that feels<br>
+<em>uniquely you.</em>
+</h1>
+
+<p>
+A premium salon experience for modern hair, beauty and grooming in Shahadatpura, Mau.
+</p>
+
+<div class="actions">
+
+<a class="btn btn-gold" href="#enquiry">
+Book an Enquiry ↗
+</a>
+
+<a class="btn btn-outline" href="tel:+918808534033">
+☎ Call Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container about">
+
+<div class="about-img reveal">
+
+<img src="images/salon-facial.png"
+alt="JP Salon beauty service">
+
+</div>
+
+<div class="about-copy reveal">
+
+<div class="kicker">
+01 / About
+</div>
+
+<h2>
+Your look.<br>
+Your moment.
+</h2>
+
+<p>
+JP Salon brings professional salon care into a refined,
+comfortable space. From everyday grooming to a fresh new
+look, the focus is on a polished experience and attention
+to detail.
+</p>
+
+<div class="points">
+
+<div class="point">
+<b>Professional Care</b>
+<span>Beauty & grooming experience.</span>
+</div>
+
+<div class="point">
+<b>Unisex</b>
+<span>Services for modern clients.</span>
+</div>
+
+<div class="point">
+<b>Lakme Professional</b>
+<span>Professional salon positioning.</span>
+</div>
+
+<div class="point">
+<b>Convenient Location</b>
+<span>Shahadatpura, Mau.</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="kicker">
+02 / Services
+</div>
+
+<h2>
+Made for your style.
+</h2>
+
+</div>
+
+<p>
+Contact the salon directly for availability and current pricing.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="service reveal">
+<div class="num">01</div>
+<h3>Hair Styling</h3>
+<p>
+Haircuts, styling and look-focused salon care.
+</p>
+</div>
+
+<div class="service reveal">
+<div class="num">02</div>
+<h3>Hair Care</h3>
+<p>
+Professional hair-care options tailored to your needs.
+</p>
+</div>
+
+<div class="service reveal">
+<div class="num">03</div>
+<h3>Facial & Beauty</h3>
+<p>
+Beauty services for a refreshed and polished look.
+</p>
+</div>
+
+<div class="service reveal">
+<div class="num">04</div>
+<h3>Grooming</h3>
+<p>
+Clean, comfortable everyday grooming.
+</p>
+</div>
+
+<div class="service reveal">
+<div class="num">05</div>
+<h3>Makeup</h3>
+<p>
+Event-ready beauty and makeup enquiries.
+</p>
+</div>
+
+<div class="service reveal">
+<div class="num">06</div>
+<h3>Custom Enquiry</h3>
+<p>
+Tell us what you need and ask the salon.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="offer reveal">
+
+<div>
+
+<div class="kicker">
+03 / Experience
+</div>
+
+<h2>
+Ready for a fresh look?
+</h2>
+
+<p>
+Send your preferred date and service on WhatsApp.
+The salon can confirm availability and details directly.
+</p>
+
+</div>
+
+<a class="btn btn-gold" href="#enquiry">
+Send Enquiry ↗
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div>
+
+<div class="kicker">
+04 / Gallery
+</div>
+
+<h2>
+A glimpse inside.
+</h2>
+
+</div>
+
+<p>
+Tap any image to view it larger.
+</p>
+
+</div>
+
+
+<div class="gallery reveal">
+
+<div class="gallery-item g1">
+<img src="images/salon-interior.png"
+alt="JP Salon interior">
+</div>
+
+<div class="gallery-item">
+<img src="images/hair-art.png"
+alt="JP Salon hair styling">
+</div>
+
+<div class="gallery-item">
+<img src="images/salon-facial.png"
+alt="JP Salon facial service">
+</div>
+
+<div class="gallery-item g4">
+<img src="images/hair-art.png"
+alt="JP Salon styling">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ENQUIRY ================= -->
+
+<section id="enquiry">
+
+<div class="container enquiry">
+
+
+<div class="enquiry-copy reveal">
+
+<div class="kicker">
+05 / Enquiry
+</div>
+
+<h2>
+Let's plan<br>
+your visit.
+</h2>
+
+<p>
+Fill in the details. Your enquiry will open directly in WhatsApp.
+</p>
+
+<div class="contact-mini">
+
+<div>
+<small>Phone</small>
+<strong>088085 34033</strong>
+</div>
+
+<div>
+<small>Hours</small>
+<strong>Open • Closes 9 PM</strong>
+</div>
+
+<div>
+<small>Location</small>
+<strong>
+Shahadatpura, Mau, Uttar Pradesh
+</strong>
+</div>
+
+</div>
+
+</div>
+
+
+<form id="form" class="reveal">
+
+<div class="field">
+
+<label>Your Name</label>
+
+<input
+id="name"
+required
+placeholder="Enter your name">
+
+</div>
+
+
+<div class="field">
+
+<label>Phone Number</label>
+
+<input
+id="phone"
+required
+type="tel"
+placeholder="Your phone number">
+
+</div>
+
+
+<div class="field">
+
+<label>Preferred Date</label>
+
+<input
+id="date"
+type="date">
+
+</div>
+
+
+<div class="field">
+
+<label>Service</label>
+
+<select id="service">
+
+<option>Hair Styling</option>
+<option>Hair Care</option>
+<option>Facial & Beauty</option>
+<option>Grooming</option>
+<option>Makeup</option>
+<option>Other / Custom Enquiry</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label>Message</label>
+
+<textarea
+id="message"
+placeholder="Tell us what you need..."></textarea>
+
+</div>
+
+
+<button
+class="btn btn-gold full"
+type="submit">
+
+SEND ON WHATSAPP ↗
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ================= VISIT ================= -->
+
+<section class="visit">
+
+<div class="container">
+
+<div class="visitbox reveal">
+
+
+<div class="visit-info">
+
+<div class="kicker">
+06 / Visit
+</div>
+
+<h2>
+Find JP Salon.
+</h2>
+
+<p>
+Krishna Market, Opp. Swadeshi Cotton Mill,
+Shahadatpura, Mau, Uttar Pradesh 275101
+</p>
+
+<div class="actions">
+
+<a
+class="btn btn-gold"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=JP+Salon%2C+Krishna+Market%2C+Shahadatpura%2C+Mau%2C+Uttar+Pradesh+275101">
+
+Get Directions ↗
+
+</a>
+
+<a
+class="btn btn-outline"
+href="tel:+918808534033">
+
+Call Salon
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="map">
+
+<div>
+
+<div class="pin">
+⌖
+</div>
+
+<h3>
+JP SALON
+</h3>
+
+<p>
+Krishna Market • Shahadatpura • Mau
+</p>
+
+<a
+class="btn btn-outline"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=JP+Salon%2C+Krishna+Market%2C+Shahadatpura%2C+Mau%2C+Uttar+Pradesh+275101">
+
+Open Google Maps
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer">
+
+<div class="logo">
+JP <span>SALON</span>
+</div>
+
+<small>
+© <span id="year"></span>
+JP Salon • Lakme Professional • Unisex
+</small>
+
+<small>
+Shahadatpura, Mau, Uttar Pradesh
+</small>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING CALL -->
+
+<a
+class="float"
+href="tel:+918808534033"
+aria-label="Call JP Salon">
+
+☎
+
+</a>
+
+
+<!-- BACK TO TOP -->
+
+<button
+class="top"
+id="top">
+
+↑
+
+</button>
+
+
+<!-- LIGHTBOX -->
+
+<div
+class="lightbox"
+id="lb">
+
+<span
+class="close"
+id="close">
+
+×
+
+</span>
+
+<img
+id="lbimg"
+alt="Gallery preview">
+
+</div>
+
+
+<script>
+
+/* MOBILE MENU */
+
+const nav = document.getElementById("nav");
+
+document.getElementById("menu").onclick = () => {
+
+    nav.classList.toggle("open");
+
+};
+
+document.querySelectorAll(".navlinks a").forEach(a => {
+
+    a.onclick = () => nav.classList.remove("open");
+
+});
+
+
+/* YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* SCROLL ANIMATION */
+
+const observer = new IntersectionObserver(
+
+entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},
+
+{
+    threshold:.12
+}
+
+);
+
+document.querySelectorAll(".reveal").forEach(el => {
+
+    observer.observe(el);
+
+});
+
+
+/* WHATSAPP ENQUIRY */
+
+document.getElementById("form").onsubmit = function(e){
+
+    e.preventDefault();
+
+    const name =
+    document.getElementById("name").value.trim();
+
+    const phone =
+    document.getElementById("phone").value.trim();
+
+    const date =
+    document.getElementById("date").value ||
+    "Not specified";
+
+    const service =
+    document.getElementById("service").value;
+
+    const message =
+    document.getElementById("message").value.trim() ||
+    "No additional message";
+
+
+    const text =
+    `Hello JP Salon!%0A%0A` +
+
+    `Name: ${encodeURIComponent(name)}%0A` +
+
+    `Phone: ${encodeURIComponent(phone)}%0A` +
+
+    `Preferred Date: ${encodeURIComponent(date)}%0A` +
+
+    `Service: ${encodeURIComponent(service)}%0A` +
+
+    `Message: ${encodeURIComponent(message)}%0A%0A` +
+
+    `I would like to enquire about availability.`;
+
+
+    window.open(
+        "https://wa.me/918808534033?text=" + text,
+        "_blank"
+    );
+
+};
+
+
+/* GALLERY LIGHTBOX */
+
+const lb =
+document.getElementById("lb");
+
+const lbi =
+document.getElementById("lbimg");
+
+
+document.querySelectorAll(
+".gallery-item img"
+).forEach(img => {
+
+    img.onclick = () => {
+
+        lbi.src = img.src;
+
+        lb.style.display = "flex";
+
+    };
+
+});
+
+
+document.getElementById("close").onclick =
+() => {
+
+    lb.style.display = "none";
+
+};
+
+
+lb.onclick = e => {
+
+    if(e.target === lb){
+
+        lb.style.display = "none";
+
+    }
+
+};
+
+
+/* BACK TO TOP */
+
+const topBtn =
+document.getElementById("top");
+
+window.addEventListener(
+"scroll",
+() => {
+
+    topBtn.style.display =
+    scrollY > 500 ? "grid" : "none";
+
+});
+
+topBtn.onclick = () => {
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+};
+
+</script>
+
+</body>
+</html>
